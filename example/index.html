@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://pandao.github.io/editor.md/examples/js/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://pandao.github.io/editor.md/editormd.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://pandao.github.io/editor.md/languages/en.js"></script>
+    <link rel="stylesheet" href="https://pandao.github.io/editor.md/css/editormd.min.css" />
+    <script src="script.js"></script>
+  </head>
+  <body ng-app="editor" ng-controller="editorCtrl">
+    <br /><br />
+    <h2>Editor 1</h2>
+    <editor ng-model="markdown" ng-change="change()"></editor>
+    <h2>Editor 2</h2>
+    <editor ng-model="markdown2"></editor>
+    <h2>Submit editors</h2>
+    <p>See console for example of values in controller.</p>
+    <button type="submit" ng-click="submit();">Submit</button>
+    <h2>Editor 1 value</h2>
+    <pre ng-bind="markdown | json"></pre>
+    <h2>Editor 2 value</h2>
+    <pre ng-bind="markdown2 | json"></pre>
+  </body>
+</html>
