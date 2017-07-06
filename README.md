@@ -3,4 +3,4 @@ Hey! So you think editor.md is super swanky and want to use it in your angular p
 
 Feel free to take this, tear it apart and build it back up again.
 
-You can see a working Plunker here for an example https://plnkr.co/edit/bhIIKOB029KaSpSolK2T
+Check the example directory, or [this Plunker](https://plnkr.co/edit/bhIIKOB029KaSpSolK2T) for an example.
